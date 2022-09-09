@@ -3,24 +3,24 @@
 #include <stdio.h>
 
 /**
- *main - prints the last digit of n and prints out whether it is
- *greater than 5,0, or less than 6
+ *main - main block
+ *Description: Print statements based on the last digit of the random number.
  *Return: 0
  */
 int main(void)
 {
 	int n;
-	int lastDigit;
+	int m;
 
 	srand(time(0));
 	n = rand() - RAND_MAX / 2;
+	m = n % 10;
 
-	lastDigit = n % 10;
-	printf("Last digit of %i is %i and is ", n, lastDigit);
-	if (lastDigit > 5)
-		printf("greater than 5\n");
-	else if (lastDigit == 0)
-		printf("0\n");
+	if (m > 5)
+		printf("Last digit of %i is %i and is greater than 5\n", n, m);
+	else if (m == 0)
+		printf("Last digit of %i is %i and is 0\n", n, m);
 	else
-		printf("less than 6 and not 0\n");
+		printf("Last digit of %i is %i and is less than 6 and not 0\n", n, m);
+
 	return (0);

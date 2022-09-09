@@ -1,4 +1,6 @@
 #include <stdio.h>
+#include <stdlib.h>
+#include <time.h>
 /**
  * main - Entry point
  *
@@ -6,20 +8,11 @@
  */
 int main(void)
 {
-	for (char c = 'a'; c <= 'z'; ++c)
-		printf("%c", c);
-	printf("\n");
-}
-{
-	for (char c = 'A'; c <= 'Z'; ++c)
-		printf("%c", c);
-	printf("\n");
-}
-int main(void)
-{
-	printf("Uppercase Alphabets\n");
+	char low;
 
-	printf("Lowercase Alphabets\n");
+	for (low = 'a'; low <= 'z'; low++)
+		putchar(low);
+		printf("\n");
 
-	return (0);
+		return (0);
 }

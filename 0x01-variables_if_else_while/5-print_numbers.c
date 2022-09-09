@@ -6,16 +6,10 @@
  */
 int main(void)
 {
-char a;
+int a = 0;
 
-for (a = 'a'; a <= 'z'; a++)
-{
-if (a == 'q' || a == 'e')
-{
-continue;
-}
+for (; a < 10; a++)
+printf("%d", a);
 putchar('\n');
-
 return (0);
-
 }

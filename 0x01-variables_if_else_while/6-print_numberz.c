@@ -1,8 +1,3 @@
-/*
- * File: 6-print_numbers.c
- * Auth: Brennan D Baraban
- */
-
 #include <stdio.h>
 
 /**

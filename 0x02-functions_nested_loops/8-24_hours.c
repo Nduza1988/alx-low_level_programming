@@ -3,13 +3,13 @@
 /**
  * jack_bauer - prints each minute of the day
  *
- * Return: 0
+ * Return: returns 0
  */
 void jack_bauer(void)
 {
 	int hour, min;
 
-	for (hour = 0; hour = 24; hour++)
+	for (hour = 0; hour = 23; hour++)
 	{
 		for (min = 0; min <= 59; min++)
 		{

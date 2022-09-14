@@ -1,24 +1,34 @@
 #include "main.h"
 
 /**
- * jack_bauer - prints each minute of the day
+ * jack_bauer - check the code for ALX School students
  *
- * Return: returns 0
+ * Return: Always 0
  */
 void jack_bauer(void)
 {
-	int hour, min;
+	int h1, h2, m1, m2;
 
-	for (hour = 0; hour = 23; hour++)
+	for (h1 = 0; h1 <= 2; h1++)
 	{
-		for (min = 0; min <= 59; min++)
+		for (h2 = 0; h2 <= 9; h2++)
 		{
-			_putchar((hour / 10) + '0');
-			_putchar((hour % 10) + '0');
-			_putchar(':');
-			_putchar((min / 10) + '0');
-			_putchar((min % 10) + '0');
-			_putchar(10);
+		if (h1 == 2 && h2 == 4)
+		{
+			break;
+		}
+		for (m1 = 0; m1 <= 5; m1++)
+		{
+			for (m2 = 0; m2 <= 9; m2++)
+			{
+			_putchar((h1 + '0');
+			_putchar((h2 + '0');
+			_putchar(58);
+			_putchar((m1 + '0');
+			_putchar((m2 + '0');
+			_putchar('\n');
+			}
+		}
 		}
 	}
 }

@@ -6,7 +6,7 @@
  * @c: Is the int that will use for argument of function.
  * Return: 0
  */
-int _islower(int c);
+int _islower(int c)
 {
 	if (c >= 'a' && c <= 'z')
 	{

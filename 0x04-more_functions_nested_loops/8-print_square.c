@@ -2,10 +2,11 @@
 
 /**
  * print_sqaure - prints a square, followed by new line
- * @size: size of square
+ * @size: parameter
+ * Return: returns nothing
  */
 
-void print_square(int size);
+void print_square(int size)
 {
 	if (size <= 0)
 	{

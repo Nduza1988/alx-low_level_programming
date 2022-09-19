@@ -3,18 +3,21 @@
 /**
  * _puts - function that prints a string, followed by new line to stdout.
  *
- * @str: input string to print
+ * @str: the string to be printed out
  *
+ * Return: the string
  */
 
 void _puts(char *str)
 {
-	int index;
+	int i = 0;
 
-	for (index = 0; str[index] != '\0'; index++)
+	while (str[i] != '\0')
 	{
-		_putchar(str[index]);
+		_putchar(str[i]);
+		i++;
 	}
+
 	_putchar('\n');
 }
 

@@ -1,4 +1,4 @@
-#include ""main.h"
+#include "main.h"
 
 /**
  * print_rev - prints a string in reverse, with a new line
@@ -15,4 +15,4 @@ void print_rev(char *s)
 		len--;
 	}
 	_putchar('\n');
-}
+'}

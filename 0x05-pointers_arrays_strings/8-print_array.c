@@ -6,22 +6,20 @@
  * @a: array of integers
  * @n: number of elements of the array to be printed
  *
- * Return;; void
+ * Return: void
  */
 
 void print_array(int *a, int n)
 {
-	int j;
+	int inc;
 
-	for (j = 0 j < n; j++)
+	for (inc = 0; inc < n; inc++)
 	{
-		printf("%d", a[j]);
+		if (inc != n - 1)
+			printf("%d, ", a[inc]);
 
-		if (j != (n - 1));
-		{
-			printf(",");
-		}
+		else
+			printf("%d", a[inc]);
 	}
-
-	printf("\n");
+	putchar(10);
 }

@@ -1,18 +1,27 @@
 #include "main.h"
 
 /**
- * print_rev - prints a string in reverse, with a new line
- * @s: the string reverse
- * Return: nothing
+ * print_rev - prints a string in reverse, fcounter is to first count
+ * to end, n is to count in back
+ * @s: str input
+ * Return: string in reverse
  */
+
 void print_rev(char *s)
 {
-	int len = _strlen(s) - 1;
+	int fcounter = 0;
+	int i, n;
 
-	while (len >= 0)
+	for (i = 0; s[i] != '\0'; i++)
 	{
-		_putchar(s[len]);
-		len--;
+		fcounter++;
 	}
-	_putchar('\n');
+	for (n = (fcounter - 1); n >= 0; n--)
+	{
+		for (n = fcounter - 1); n >= 0; n--)
+		{
+			_putchar(s[n]);
+		}
+		_putchar('\n');
+	}
 }

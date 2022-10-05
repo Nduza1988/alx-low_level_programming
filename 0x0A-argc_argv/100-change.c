@@ -18,7 +18,7 @@ int main(int argc, char *argv[])
 		printf("%s\n", "Error");
 			return (1);
 	}
-	else if (argv < 0)
+	else if (argc < 0)
 	{
 		return (0);
 	}
@@ -33,40 +33,38 @@ int main(int argc, char *argv[])
  * Return: change
  */
 
-int change(int cent)
+int change(int cents)
 {
 	int q = 25, d = 10, n = 5, t = 2, p = 1;
 	int coins;
 
-	while (cent > 0)
+	while (cents > 0)
 	{
-		while (cent >= q)
+		while (cents >= q)
 		{
-			cent -= q;
+			cents -= q;
 			coins++;
 		}
-		while (cent >= d)
+		while (cents >= d)
 		{
-			cent -= d;
+			cents -= d;
 			coins++;
 		}
-		while (cent >= n)
+		while (cents >= n)
 		{
-			cent -= n;
+			cents -= n;
 			coins++;
 		}
-		while (cent >= t)
+		while (cents >= t)
 		{
-			cent -= t;
+			cents -= t;
 			coins++;
 		}
-		while (cent >= p)
+		while (cents >= p)
 		{
-			cent -= p;
+			cents -= p;
 			coins++;
 		}
 	}
 	return (coins);
 }
-
-

@@ -68,7 +68,7 @@ int word_count(char *s, int word)
 char **strtow(char *str)
 {
 	char **list;
-	int num_words, i, k, j;
+	int num_words, m, k, j;
 
 	j = 0;
 	num_words = word_count(str, 0);
@@ -76,28 +76,28 @@ char **strtow(char *str)
 	if (str == NULL || num_words == 0)
 		return (NULL);
 	list = malloc((num_words + 1) * sizeof(char *));
-	if (list[i] == NULL)
+	if (list[m] == NULL)
 		return (NULL);
 
-	for (i = 0; i < num_words; i++)
+	for (m = 0; m < num_words; m++)
 	{
 		j += findword(&str[j]);
-		list[i] = (char *)malloc((wordlen(str) + 1) * sizeof(char));
-		if (list[i] == NULL)
+		list[m] = (char *)malloc((wordlen(str) + 1) * sizeof(char));
+		if (list[m] == NULL)
 		{
-		for (i = i - 1; i >= 0; i--)
-			free(list[i]);
+		for (m = m - 1; m >= 0; m--)
+			free(list[m]);
 		free(list);
 		return (NULL);
 		}
 
 	for (k = 0; str[j] != ' ' && str[j] != '\0'; k++)
 	{
-		list[i][k] = str[j];
+		list[m][k] = str[j];
 		j++;
 	}
-	list[i][k] = '\0';
+	list[m][k] = '\0';
 	}
-	list[i] = NULL;
+	list[m] = NULL;
 	return (list);
 }

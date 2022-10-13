@@ -7,6 +7,7 @@
  * print_all - function that prints anything
  *
  * @format: this is the format to print a value
+ *
  */
 
 void print_all(const char * const format, ...)
@@ -30,9 +31,9 @@ void print_all(const char * const format, ...)
 			case 'c':
 				printf("%c", (char) va_arg(vl, int));
 				break;
-			case 's'
+			case 's':
 				string = va_arg(vl, char *);
-			if (string == NULL)
+				if (string == NULL)
 			{
 				printf("(nil)");
 				break;
